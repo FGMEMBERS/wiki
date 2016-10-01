@@ -13,12 +13,12 @@ def chunks(l, n):
 
 def aircraftItem (name):
     "concatenates aircraft information"
-    sys.stdout.write(''.join(['**',name,'** <br> ![Thumbnail](https://github.com/FGMEMBERS/',name,'/blob/master/thumbnail.jpg) <br> [Development](https://github.com/FGMEMBERS/',name,') <br> [Releases](https://github.com/FGMEMBERS/',name,'/releases)']))
+    sys.stdout.write(''.join(['**',name,'** <br> <img src="https://github.com/FGMEMBERS/',name,'/blob/master/thumbnail.jpg" width="171"> <br> [Development](https://github.com/FGMEMBERS/',name,') <br> [Releases](https://github.com/FGMEMBERS/',name,'/releases)']))
     return
 
 def aircraftItemNonGPL (name):
     "concatenates nonGPL aircraft information"
-    sys.stdout.write(''.join(['**',name,'** <br> ![Thumbnail](https://github.com/FGMEMBERS-NONGPL/',name,'/blob/master/thumbnail.jpg) <br> [Development](https://github.com/FGMEMBERS-NONGPL/',name,') <br> [Releases](https://github.com/FGMEMBERS-NONGPL/',name,'/releases)']))
+    sys.stdout.write(''.join(['**',name,'** <br> <img src="https://github.com/FGMEMBERS-NONGPL/',name,'/blob/master/thumbnail.jpg" width="171"> <br> [Development](https://github.com/FGMEMBERS-NONGPL/',name,') <br> [Releases](https://github.com/FGMEMBERS-NONGPL/',name,'/releases)']))
     return
 
 def tableRow(list):

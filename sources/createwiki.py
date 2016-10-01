@@ -112,6 +112,6 @@ def mainNonGPL(acftList):
   wikiEnd()
   return
 
-#mainGPL(contents)
-mainNonGPL(contents)
+mainGPL(contents)
+#mainNonGPL(contents)
 

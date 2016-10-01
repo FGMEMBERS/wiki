@@ -38,11 +38,6 @@ def tableRow(list):
         aircraftItem(list[2]),
     except IndexError:
         print (' '), 
-    print (' | '),
-    try:
-        aircraftItem(list[3]),
-    except IndexError:
-        print (' '), 
     print (' | ')
     return
 
@@ -62,12 +57,7 @@ def tableRowNonGPL(list):
     try:
         aircraftItemNonGPL(list[2]),
     except IndexError:
-        print (' '), 
-    print (' | '),
-    try:
-        aircraftItemNonGPL(list[3]),
-    except IndexError:
-        print (' '), 
+        print (' '),  
     print (' | ')
     return
 
@@ -86,15 +76,15 @@ def tableNonGPL(chunks):
 def wikiHeader():
     "creates the WikiHeader"
     print("# FGMEMBERS: FligthGear Aircrafts Available")
-    print("|               |               |       |       |")
-    print("| -------------  |-------------| -----| -----|")
+    print("|               |               |       | ")
+    print("| -------------  |-------------| -----| ")
     return
 
 def wikiHeaderNonGPL():
     "creates the WikiHeader"
     print("# FGMEMBERS-NONGPL: FligthGear Non GPL Aircrafts Available")
-    print("|               |               |       |       |")
-    print("| -------------  |-------------| -----| -----|")
+    print("|               |               |       |")
+    print("| -------------  |-------------| -----|")
     return
 
 def wikiEnd():
@@ -106,8 +96,8 @@ def wikiEnd():
 
 def mainGPL(acftList):
   "outputs list of GPL"
-  #Create the aircraftList as chunks of 4
-  acft=list(chunks(acftList,4))
+  #Create the aircraftList as chunks of 3
+  acft=list(chunks(acftList,3))
   wikiHeader()
   table(acft)
   wikiEnd()
@@ -115,8 +105,8 @@ def mainGPL(acftList):
 
 def mainNonGPL(acftList):
   "outputs list of NonGPL"
-  #Create the aircraftList as chunks of 4
-  acft=list(chunks(acftList,4))
+  #Create the aircraftList as chunks of 3
+  acft=list(chunks(acftList,3))
   wikiHeaderNonGPL()
   tableNonGPL(acft)
   wikiEnd()

@@ -85,14 +85,14 @@ def tableNonGPL(chunks):
 
 def wikiHeader():
     "creates the WikiHeader"
-    print("# FGMEMBERS: FligthGear Aircrafts Available")
+    print("# FGMEMBERS: FlightGear Aircrafts Available")
     print("|               |               |       |       |")
     print("| -------------  |-------------| -----| -----|")
     return
 
 def wikiHeaderNonGPL():
     "creates the WikiHeader"
-    print("# FGMEMBERS-NONGPL: FligthGear Non GPL Aircrafts Available")
+    print("# FGMEMBERS-NONGPL: FlightGear Non GPL Aircrafts Available")
     print("|               |               |       |       |")
     print("| -------------  |-------------| -----| -----|")
     return
